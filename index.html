@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finding Aya</title>
   <style>
     body {
-      background-image: url("images/starrysky01.png"); /
-      background-size: 100% 100%;
+      background-image: url("wafu01.png");
+      background-size: cover;
       background-repeat: no-repeat;
-      background-attachment: fixed;
       background-position: center;
+      background-attachment: fixed;
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 50px;
-      color: white;
+      color: deeppink;
+    }
+    .content {
+      background-color: rgba(255, 255, 255, 0.8); /* 半透明白 */
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+      max-width: 600px;
     }
     h1 {
       color: deeppink;
     }
-    a {
-      color: yellow;
-      text-decoration: none;
-      font-weight: bold;
+    p.gray {
+      color: gray;
     }
-    a:hover {
+    a {
+      color: blue;
       text-decoration: underline;
     }
   </style>
 </head>
-  <body>
+<body>
   <div class="content">
-  <h1>Hello, I'm Aya 🌸</h1>
-  <p style="color: gray;">Welcome to my personal site!</p>
-  <p><a href="profile.html"target="_blank" style="color: blue; text-decoration: underline;">My Profile 🌸</a> <a href="https://forms.gle/tnpwehtDWfnY7hoJ7" target="_blank" style="color: blue; text-decoration: underline;">Contact Me</a></p>
-</div>
+    <h1>Hello, I'm Aya 🌸</h1>
+    <p class="gray">Welcome to my personal site!</p>
+    <p><a href="profile.html">My Profile 🌸</a></p>
+    <p><a href="https://forms.gle/tnpwehtDWfnY7hoJ7" target="_blank">Contact Me</a></p>
+  </div>
 </body>
 </html>
