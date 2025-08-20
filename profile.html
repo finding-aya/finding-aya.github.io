@@ -2,57 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile - Aya in the wonder</title>
+  <title>Aya in the wonder</title>
   <style>
-     body {
-      background-image: url("images/starrysky01.png");
-      background-size: cover;        /* 画面全体に拡大 */
-      background-repeat: no-repeat;  /* 繰り返さない */
-      background-position: center;   /* 中央に配置 */
-      background-attachment: fixed;  /* スクロールしても固定 */
+    body {
       font-family: Arial, sans-serif;
+      background: url('wafu.png') no-repeat center center/cover;
+      margin: 0;
+      padding: 0;
+      color: #333;
       text-align: center;
-      color: deeppink;
+    }
+    h1 {
+      margin: 20px;
+      font-size: 2.5em;
+      color: #d63384;
+    }
+    .profile-container {
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.8); /* 半透明の白で背景と文字を区切る */
+      margin: 20px auto;
+      max-width: 900px;
+      border-radius: 15px;
     }
-    .content {
-      background-color: rgba(255, 255, 255, 0.8); /* 半透明白 */
+    .profile-img {
+      flex: 1;
+      text-align: right;
+      padding-right: 20px;
+    }
+    .profile-img img {
+      max-width: 200px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .profile-text {
+      flex: 2;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .contact {
+      margin-top: 30px;
       padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
-      max-width: 90%;
+      display: inline-block;
     }
-    h2 {
-      color: deeppink;
-    }
-    p.gray {
-      color: gray;
-    }
-    a {
-      color: blue;
-      text-decoration: underline;
+    .contact a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #0077cc;
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h2>Aya in the wonder</h2>
-    <p class="gray">Learning English for 2 years, and enjoying the journey of discovering languages and myself.</p>
+  <h1>Aya in the wonder ☆彡</h1>
 
-    <p>Languages: Español | English | Japanese | Italiano </p>
+  <div class="profile-container">
+    <div class="profile-img">
+      <img src="profile.jpg" alt="Profile Picture">
+    </div>
+    <div class="profile-text">
+      <p>Hello! I'm Aya <br>
+      I've been learning English for 2 years now.<br>
+      Thank you for joining me on my language learning journey!<br><br>
+      I enjoy punk rock, melodic death metal, ska and more 🎶<bar>
+      ♡From Kansai, 170cm tall </p>
+    </div>
+  </div>
 
-    <p>While I usually teach myself, my friends—both in real life and online—have been incredibly supportive and witty.</p>
-
-    <p>Music is a big part of my life! I enjoy punk rock, melodic death metal, ska, and many other genres.</p>
-
-    <p>From the Kansai area, 170cm tall</p>
-
-    <p>Feel free to explore my posts, and let's enjoy this journey together!</p>
-
-    <p><a href="https://forms.gle/tnpwehtDWfnY7hoJ7" target="_blank">Contact Me</a></p>
+  <div class="contact">
+    <p>♡ <a href="https://forms.gle/tnpwehtDWfnY7hoJ7" target="_blank">Contact me</a></p>
   </div>
 </body>
 </html>
+
 
