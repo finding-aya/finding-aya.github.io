@@ -24,10 +24,17 @@
       align-items: center;
     }
     .content {
-      background-color: rgba(255, 255, 255, 0.8); /* 半透明白 */
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 90%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  .content {
+    background-color: rgba(255, 255, 255, 0.95); /* ダークでも白に寄せる */
+    color: black;
+  }
+}
+
+
     }
     h1 {
       color: deeppink;
