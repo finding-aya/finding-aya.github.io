@@ -5,23 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile - Aya in the wonder</title>
   <style>
-    body {
-      background-image: url("images/starrysky01.png"); /
-      background-size: 100% 100%
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
+     body {
+      background-image: url("images/starrysky01.png");
+      background-size: cover;        /* 画面全体に拡大 */
+      background-repeat: no-repeat;  /* 繰り返さない */
+      background-position: center;   /* 中央に配置 */
+      background-attachment: fixed;  /* スクロールしても固定 */
       font-family: Arial, sans-serif;
       text-align: center;
-      padding: 50px;
       color: deeppink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .content {
-      background-color: rgba(255, 255, 255, 0.8); /* 半透明オーバーレイで文字を見やすく */
+      background-color: rgba(255, 255, 255, 0.8); /* 半透明白 */
       padding: 20px;
       border-radius: 10px;
-      display: inline-block;
-      max-width: 600px;
+      max-width: 90%;
     }
     h2 {
       color: deeppink;
