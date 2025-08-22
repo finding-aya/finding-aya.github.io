@@ -25,33 +25,25 @@
   }
   .archive-container a {
     display: inline-block;
-    padding: 15px 30px; /* 押しやすい大きさ */
+    padding: 15px 30px;
     margin: 10px;
-    background-color: #ff99cc; /* 通常のピンク */
+    background-color: #ff99cc; /* 普通のピンク */
     color: white;
     text-decoration: none;
-    border-radius: 20px; /* 丸みを増やしてふんわり */
+    border-radius: 20px;
     font-weight: bold;
     font-size: 1.1em;
     transition: transform 0.2s, background-color 0.2s;
   }
   .archive-container a:hover {
-    transform: scale(1.05); /* ちょっと浮き上がる感じ */
-    background-color: #ffc0dd; /* 優しい薄ピンクに変更 */
+    transform: scale(1.05);
+    background-color: #ffb6d9; /* ホバー時の優しいピンク */
   }
-</style>
-</head>
-<body>
-  <h1>January 2025</h1>
-  <div class="archive-container">
-    <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
-    <a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
-  </div>
-</body>
-</html>  }
-  .archive-container a:hover {
-    transform: scale(1.05); /* ちょっと浮き上がる感じ */
-    background-color: #d966aa; /* ホバー時に少し濃く */
+  @media (max-width: 600px) {
+  .archive-container a {
+    padding: 20px 40px; /* 小さい画面ではボタンを広く */
+    font-size: 1.3em;   /* 文字も大きく */
+  }
   }
 </style>
 </head>
