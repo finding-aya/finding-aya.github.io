@@ -25,16 +25,30 @@
   }
   .archive-container a {
     display: inline-block;
-    padding: 15px 30px; /* ちょっと大きめ */
+    padding: 15px 30px; /* 押しやすい大きさ */
     margin: 10px;
-    background-color: #ff99cc; /* ピンク系でかわいく */
+    background-color: #ff99cc; /* 通常のピンク */
     color: white;
     text-decoration: none;
     border-radius: 20px; /* 丸みを増やしてふんわり */
     font-weight: bold;
-    font-size: 1.1em; /* 少し大きく */
+    font-size: 1.1em;
     transition: transform 0.2s, background-color 0.2s;
   }
+  .archive-container a:hover {
+    transform: scale(1.05); /* ちょっと浮き上がる感じ */
+    background-color: #ffc0dd; /* 優しい薄ピンクに変更 */
+  }
+</style>
+</head>
+<body>
+  <h1>January 2025</h1>
+  <div class="archive-container">
+    <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
+    <a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
+  </div>
+</body>
+</html>  }
   .archive-container a:hover {
     transform: scale(1.05); /* ちょっと浮き上がる感じ */
     background-color: #d966aa; /* ホバー時に少し濃く */
