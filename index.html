@@ -1,110 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finding Aya</title>
-  <!-- Google Fonts 追加 -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    body {
-      background-image: url("images/starrysky01.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      font-family: Arial, sans-serif; /* 全体はArial */
-      color: deeppink;
-    }
-    .content {
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.85);
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-      text-align: center;
-    }
-    h1 {
-      color: deeppink;
-      font-family: 'Nunito', sans-serif; /* タイトルだけNunito */
-    }
-    p.gray {
-      color: gray;
-    }
-    a {
-      text-decoration: none;
-      color: #66ccff; /* 柔らかめな水色 */
-    }
-    a:hover {
-      text-decoration: underline;
-      color: #3399ff; /* ホバー時は少し濃いめ */
-    }
-    .message {
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 15px;
-      background: rgba(255, 240, 245, 0.85);
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      color: deeppink;
-      text-align: center;
-      font-size: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="content">
-    <h1>Hello, I'm Aya 🌸</h1>
-    <p class="gray">Welcome to my personal site!</p>
-    <p><a href="profile.html">My Profile 🌸</a></p>
-    <p><a href="archive.html">Archive 🐇</a></p>
-    <p><a href="https://forms.gle/tnpwehtDWfnY7hoJ7" target="_blank">Contact Me</a></p>
-  </div>
+<!DOCTYPE html>        <html lang="en">        
+<head>        
+  <meta charset="UTF-8">        
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+  <title>Finding Aya</title>        
+  <style>        
+    html, body {        
+      margin: 0;        
+      padding: 0;        
+      height: 100%;        
+    }        
+    body {        
+      background-image: url("images/starrysky01.png");        
+      background-size: cover;        
+      background-repeat: no-repeat;        
+      background-position: center;        
+      background-attachment: fixed;        
+      font-family: Arial, sans-serif;        
+      color: deeppink;        
+    }        
+    .content {        
+      max-width: 600px;        
+      margin: 50px auto;        
+      padding: 20px;        
+      background-color: rgba(255, 255, 255, 0.85);        
+      border-radius: 20px;        
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);        
+      text-align: center;        
+    }        
+    h1 {        
+      color: deeppink;        
+    }        
+    p.gray {        
+      color: gray;        
+    }        
+    a {        
+  text-decoration: none;        
+  color: #66ccff; /* 柔らかめな水色 */        
+}        a:hover {
+text-decoration: underline; /* ホバー時に下線 /
+color: #3399ff; / ホバー時は少し濃いめ */
+}
+.message {
+max-width: 600px;
+margin: 40px auto;
+padding: 15px;
+background: rgba(255, 240, 245, 0.85);
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+color: deeppink;
+text-align: center;
+font-size: 1rem;
+}
+</style>
 
-  <!-- ランダムメッセージ -->
-  <div class="message" id="message"></div>
+</head>        
+<body>        
+  <div class="content">        
+    <h1>Hello, I'm Aya 🌸</h1>        
+    <p class="gray">Welcome to my personal site!</p>        
+    <p><a href="profile.html">My Profile 🌸</a></p>  
+<p><a href="archive.html">Archive 🐇</a></p>  
+    <p><a href="https://forms.gle/tnpwehtDWfnY7hoJ7" target="_blank">Contact Me</a></p>        
+  </div>          <!-- ランダムメッセージ -->          <div class="message" id="message"></div>          <script>        
+    const messages = [        
+      "Have a lovely day! 🌸",        
+      "Take a deep breath and smile 😊",        
+      "Keep your fluffy spirit up 🐇",        
+      "You are amazing just as you are 💖",        
+      "Enjoy the little things today 🌟",        
+      "Sending warm hugs your way 🤗",        
+      "A little kindness goes a long way 💫",        
+      "Stay cozy and calm ☕✨",        
+      "Remember: you are loved 💌",        
+      "Shine bright and sparkle today ✨",        
+      "今日もぽわぽわポイント満タン！💖",        
+      "Keep a little magic in your heart 🪄",        
+      "Smile, the world needs your glow 🌞",        
+      "ふわふわを感じて深呼吸…😌",        
+      "You make today extra special 🌈",        
+      "小さな幸せを見つけよう 🌷",        
+      "Be gentle with yourself 🐇💓",        
+      "Your smile is your superpower 💫",        
+      "今日も素敵な時間を過ごしてね 🌼",        
+      "Sprinkle kindness wherever you go ✨",        
+      "Stay curious and playful 🐾",        
+      "ぽかぽか気分で心もふんわり ☁️💖",        
+      "Believe in your own sparkle ✨",        
+      "Life is better with a little joy 🌈",        
+      "Your softness is your strength 🪶💪",        
+      "今日のあなたは今日しかいないから、大切にしてね ⏳💖",        
+      "小さな記録が、大きな宝物になるよ 💎",        
+      "Stay warm, stay kind, stay you 🐾🌟",        
+      "今日もあなたは愛されてる ♥️"        
+    ];        
+        
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];        
+    document.getElementById("message").textContent = randomMessage;        
+  </script>        </body>        
+</html>       
 
-  <script>
-    const messages = [
-      "Have a lovely day! 🌸",
-      "Take a deep breath and smile 😊",
-      "Keep your fluffy spirit up 🐇",
-      "You are amazing just as you are 💖",
-      "Enjoy the little things today 🌟",
-      "Sending warm hugs your way 🤗",
-      "A little kindness goes a long way 💫",
-      "Stay cozy and calm ☕✨",
-      "Remember: you are loved 💌",
-      "Shine bright and sparkle today ✨",
-      "今日もぽわぽわポイント満タン！💖",
-      "Keep a little magic in your heart 🪄",
-      "Smile, the world needs your glow 🌞",
-      "ふわふわを感じて深呼吸…😌",
-      "You make today extra special 🌈",
-      "小さな幸せを見つけよう 🌷",
-      "Be gentle with yourself 🐇💓",
-      "Your smile is your superpower 💫",
-      "今日も素敵な時間を過ごしてね 🌼",
-      "Sprinkle kindness wherever you go ✨",
-      "Stay curious and playful 🐾",
-      "ぽかぽか気分で心もふんわり ☁️💖",
-      "Believe in your own sparkle ✨",
-      "Life is better with a little joy 🌈",
-      "Your softness is your strength 🪶💪",
-      "今日のあなたは今日しかいないから、大切にしてね ⏳💖",
-      "小さな記録が、大きな宝物になるよ 💎",
-      "Stay warm, stay kind, stay you 🐾🌟",
-      "今日もあなたは愛されてる ♥️"
-    ];
-
-    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-    document.getElementById("message").textContent = randomMessage;
-  </script>
-</body>
-</html>
