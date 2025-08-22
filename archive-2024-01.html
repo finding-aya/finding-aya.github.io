@@ -16,14 +16,18 @@
     text-align: center;
     color: #333;
   }
-  .archive-container {
-    max-width: 900px;
-    margin: 50px auto;
-    background: rgba(255,255,255,0.8);
-    border-radius: 15px;
-    padding: 30px;
+
+  .center-box {
+    display: inline-block;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.8); /* 半透明 */
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
-  .archive-container a {
+
+  .center-box a {
     display: inline-block;
     padding: 15px 30px;
     margin: 10px;
@@ -33,61 +37,31 @@
     border-radius: 20px;
     font-weight: bold;
     font-size: 1.1em;
-    transition: transform 0.2s;
+    transition: transform 0.2s, background-color 0.2s;
   }
-  .archive-container a:hover {
-    background-color: #f2c1d9; /* ホバー時にちょっと薄く */
+
+  .center-box a:hover {
+    background-color: #f2c1d9;
     transform: scale(1.05);
   }
+
   .left-bottom-image {
     position: fixed;
     left: 20px;
     bottom: 20px;
-    max-width: 150px; /* 大きすぎない */
+    max-width: 150px;
     z-index: 10;
   }
 </style>
 </head>
 <body>
-  <div class="center-box">
-  <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
-  <a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
-</div>
-
-<style>
-.center-box {
-  display: inline-block;
-  padding: 40px 30px;
-  background: rgba(255, 255, 255, 0.8); /* 半透明 */
-  border-radius: 20px;
-  text-align: center;
-  margin-top: 50px; /* ページの上から少し下げる */
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* ふんわり浮かせる */
-}
-
-.center-box a {
-  display: inline-block;
-  padding: 15px 30px;
-  margin: 10px;
-  background-color: #ff99cc;
-  color: white;
-  text-decoration: none;
-  border-radius: 20px;
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: transform 0.2s;
-}
-
-.center-box a:hover {
-  background-color: #f2c1d9;
-  transform: scale(1.05);
-}
-</style>
   <h1>January 2025</h1>
-  <div class="archive-container">
+
+  <div class="center-box">
     <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
     <a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
   </div>
 
+  <img src="images/(2).jpeg" class="left-bottom-image" alt="Decoration">
 </body>
 </html>
