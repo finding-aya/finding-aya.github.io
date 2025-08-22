@@ -13,8 +13,8 @@
     background-position: center;
     margin: 0;
     padding: 0;
-    color: #333;
     text-align: center;
+    color: #333;
   }
   .archive-container {
     max-width: 900px;
@@ -27,32 +27,24 @@
     display: inline-block;
     padding: 15px 30px;
     margin: 10px;
-    background-color: #ffb6c1; /* 薄ピンクに変更 */
+    background-color: #ff99cc;
     color: white;
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
     font-size: 1.1em;
-    transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.2s;
   }
   .archive-container a:hover {
+    background-color: #f2c1d9; /* ホバー時にちょっと薄く */
     transform: scale(1.05);
-    background-color: #ff99cc; /* ホバーで少し濃く */
   }
-  .archive-text {
-    margin-top: 30px;
-    font-size: 1em;
-    color: #555;
-  }
-  .archive-text span {
-    font-size: 1.5em;
-    margin: 0 5px;
-  }
-  @media (max-width: 600px) {
-    .archive-container a {
-      padding: 20px 40px;
-      font-size: 1.3em;
-    }
+  .left-bottom-image {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    max-width: 150px; /* 大きすぎない */
+    z-index: 10;
   }
 </style>
 </head>
@@ -62,5 +54,8 @@
     <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
     <a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
   </div>
+
+  <!-- 左下の画像 -->
+  <img src="images (2).jpeg" alt="cute image" class="left-bottom-image">
 </body>
 </html>
