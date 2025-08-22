@@ -9,9 +9,7 @@
     background-image: url("images/starrysky01.png");
     background-size: cover;
     background-repeat: no-repeat;
-      background-attachment: fixed;
-      font-family: Arial, sans-serif;
-      color: deeppink;
+    background-attachment: fixed;
     background-position: center;
     margin: 0;
     padding: 0;
@@ -26,23 +24,29 @@
     padding: 30px;
   }
   .archive-container a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
+    display: block;          /* 横幅いっぱいに広げる */
+    width: 80%;              /* ボタン幅を80%に */
+    margin: 15px auto;       /* 上下の余白を広く、中央配置 */
+    padding: 20px 0;         /* 上下の余白を大きく */
+    font-size: 1.3em;        /* 文字を大きめに */
+    font-weight: bold;
     background-color: #6fb1fc;
     color: white;
     text-decoration: none;
-    border-radius: 12px;
-    font-weight: bold;
+    border-radius: 20px;     /* 角を丸く */
+    text-align: center;
+    transition: background 0.3s;
+  }
+  .archive-container a:hover {
+    background-color: #5590d0; /* ホバー時に少し濃く */
   }
 </style>
 </head>
 <body>
   <h1>January 2025</h1>
   <div class="archive-container">
-   <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
-<a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
-
+    <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
+    <a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
   </div>
 </body>
 </html>
