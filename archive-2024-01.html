@@ -27,7 +27,7 @@
     display: inline-block;
     padding: 15px 30px;
     margin: 10px;
-    background-color: #ff99cc; /* 普通のピンク */
+    background-color: #ffb6c1; /* 薄ピンクに変更 */
     color: white;
     text-decoration: none;
     border-radius: 20px;
@@ -37,13 +37,22 @@
   }
   .archive-container a:hover {
     transform: scale(1.05);
-    background-color: #ffb6d9; /* ホバー時の優しいピンク */
+    background-color: #ff99cc; /* ホバーで少し濃く */
+  }
+  .archive-text {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #555;
+  }
+  .archive-text span {
+    font-size: 1.5em;
+    margin: 0 5px;
   }
   @media (max-width: 600px) {
-  .archive-container a {
-    padding: 20px 40px; /* 小さい画面ではボタンを広く */
-    font-size: 1.3em;   /* 文字も大きく */
-  }
+    .archive-container a {
+      padding: 20px 40px;
+      font-size: 1.3em;
+    }
   }
 </style>
 </head>
@@ -51,7 +60,6 @@
   <h1>January 2025</h1>
   <div class="archive-container">
     <a href="https://docs.google.com/document/d/1reg5orIt_Xo5dnbUIAVvY1J3PG7xvOMT/edit?usp=sharing" target="_blank">📖 First Half</a>
-    <p>
     <a href="https://docs.google.com/document/d/1tPNuy7lW865_oLf9D67pKby2C3-LcXCXFJ5cxAcjcTk/edit?usp=sharing" target="_blank">📖 Second Half</a>
   </div>
 </body>
