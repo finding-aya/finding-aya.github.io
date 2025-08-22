@@ -23,21 +23,23 @@
     border-radius: 15px;
     padding: 30px;
   }
-  .archive-container a {
-    display: block;          /* 横幅いっぱいに広げる */
-    width: 80%;              /* ボタン幅を80%に */
-    margin: 15px auto;       /* 上下の余白を広く、中央配置 */
-    padding: 20px 0;         /* 上下の余白を大きく */
-    font-size: 1.3em;        /* 文字を大きめに */
-    font-weight: bold;
-    background-color: #6fb1fc;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;     /* 角を丸く */
-    text-align: center;
-    transition: background 0.3s;
-  }
-  .archive-container a:hover {
+  <style>
+.archive-container a {
+  display: inline-block;
+  padding: 15px 30px; /* ちょっと大きめにして押しやすく */
+  margin: 10px;
+  background-color: #ff99cc; /* ピンク系でかわいく */
+  color: white;
+  text-decoration: none;
+  border-radius: 20px; /* 丸みを増やしてふんわり */
+  font-weight: bold;
+  font-size: 1.1em; /* 少し大きく */
+  transition: transform 0.2s;
+}
+
+.archive-container a:hover {
+  transform: scale(1.05); /* ちょっと浮き上がる感じでかわいく */
+}
     background-color: #5590d0; /* ホバー時に少し濃く */
   }
 </style>
